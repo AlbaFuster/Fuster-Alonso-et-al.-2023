@@ -433,7 +433,7 @@ ppxl_all <- cprod(ppxl, data.frame(tiempo = seq_len(k)))
 mark <- predict(fit_mpp,
                 ppxl_all,
                 ~ data.frame(tiempo = tiempo,
-                             mark = exp(spatial + Intercept + temporal)
+                             mark = exp(spatial + Intercept + temporal + bat)
                 )
 )
 
